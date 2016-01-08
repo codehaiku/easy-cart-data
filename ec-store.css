@@ -224,7 +224,7 @@ body {
     top: -18px;
     right: 0;
     left: auto;
-    margin: 0;
+    margin: 0 10px;
     -webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, .3), inset 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(0, 0, 0, .2);
     -moz-box-shadow: inset 0 0 0 rgba(255, 255, 255, .3), inset 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(0, 0, 0, .2);
     box-shadow: inset 0 0 0 rgba(255, 255, 255, .3), inset 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(0, 0, 0, .2);
@@ -246,13 +246,14 @@ body {
 }
 
 .ec_tag2 {
-    top: -8px;
-    left: 0
+    top: -17.5px;
+	margin: 0 10px;
 }
 
 .ec_tag2>span {
     font-size: 11px;
-    padding: 4px 6px;
+    line-height: 16px;
+    padding: 7px;
     position: relative
 }
 
@@ -1166,7 +1167,7 @@ body {
     -moz-transition: opacity .3s ease-out;
     -o-transition: opacity .3s ease-out;
     transition: opacity .3s ease-out;
-    height: 50px;
+    height: 60px;
     opacity: 1;
     overflow: hidden
 }
@@ -1176,6 +1177,7 @@ body {
     top: -31px;
     left: 10%;
     right: 10%;
+    padding: 5px 7.5px 7.5px;
     background-color: #333;
     color: #333;
     cursor: pointer;
@@ -1314,16 +1316,17 @@ body {
 
 .ec_product_type4 .ec_product_addtocart_container {
     height: 45px;
-    text-align: right;
+    text-align: center;
     margin-top: 15px;
-    float: right
+    display: inline-block;
+    width: 100%;
 }
 
 .ec_product_type4 .ec_product_addtocart {
     color: #333;
     padding: 4px 8px;
     cursor: pointer;
-    float: right;
+	display: inline-block;
     font-size: 13px
 }
 
@@ -1443,7 +1446,7 @@ body {
     margin-top: 17px;
     padding: 0 10px;
     float: left;
-    width: 35%;
+    width: 100%;
     line-height: 1.1em
 }
 
@@ -1467,7 +1470,7 @@ body {
 
 .ec_product_type5 .ec_product_addtocart_container {
     width: 100%;
-    height: 45px;
+    height: 60px;
     margin-top: 15px;
     position: absolute;
     z-index: 998;
@@ -1618,7 +1621,7 @@ body {
 
 .ec_price_container_type5 {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: -7px;
     padding: 10px 12px
 }
@@ -1673,7 +1676,7 @@ body {
 .ec_product_type6 .ec_product_meta_type6 .ec_product_description {
     font-size: 12px;
     padding-right: 15px;
-    line-height: 1.1em
+    line-height: 18px;
 }
 
 .ec_product_type6 .ec_product_meta_type6 .ec_product_stars {
@@ -1689,7 +1692,7 @@ body {
 
 .ec_product_type6 .ec_product_meta_type6 .ec_price_container {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: -7px;
     padding: 10px 12px
 }
@@ -1935,7 +1938,7 @@ body {
     width: 100%;
     background: rgba(0, 0, 0, .75);
     box-sizing: border-box;
-    z-index: 99999;
+    z-index: 100000;
     text-align: center
 }
 
@@ -1949,42 +1952,44 @@ body {
 }
 
 .ec_product_quickview_content {
-    width: 99%;
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
+	width: 100%;
+    height: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative
+    position: relative;
+    display: table;
+    float: left;
 }
 
 .ec_product_quickview_content_padding {
-    background-color: #FFF;
-    max-width: 800px;
-    width: 90%;
+	width: auto;
     height: auto;
-    margin: 0 auto;
     position: relative;
-    display: block
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .ec_product_quickview_content_holder {
-    display: table;
+    display: inline-block;
     position: relative;
-    width: 100%
+    width: 60%;
+    height: auto;
+    text-align: center;
+    background: #fff;
+    padding: 20px 20px 0;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .68);
 }
-
-.ec_product_quickview_content_images {
-    width: 55%;
-    height: 100%;
-    overflow: hidden;
+.ec_product_quickview_content_holder:after {
+    content: close-quote;
+    height: 20px;
+    width: 100%;
     float: left;
-    text-align: left;
-    position: relative;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block
+}
+.ec_product_quickview_content_images {
+    display: table;
+    width: 40%;
+    float: left;
 }
 
 .ec_product_quickview_content_images:hover>.ec_flipbook_left,
@@ -2001,15 +2006,13 @@ body {
 }
 
 .ec_product_quickview_content_data {
-    width: 45%;
-    min-width: 45%;
-    padding: 25px;
-    text-align: left;
-    margin-left: 55%;
-    display: inherit;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding-left: 25px;
 }
 
 .ec_product_quickview_trial_notice {
