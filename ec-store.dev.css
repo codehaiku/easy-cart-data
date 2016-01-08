@@ -2293,9 +2293,11 @@ body .ec_cart_error_row {
 .ec_product_page_sort br {
     display: none
 }
+
 .ec_product_page .ec_product_page_sort .thrive-customized-select {
-    float: right;
+    float: right
 }
+
 .ec_product_page_sort select {
     float: right;
     -webkit-appearance: none;
@@ -7100,11 +7102,11 @@ td.ec_account_orderitem_total {
     text-decoration: none
 }
 
-.ec_cart_widget_minicart_wrap {
+.widget .ec_cart_widget_minicart_wrap {
     padding: 10px 15px;
     position: absolute;
     z-index: 999;
-    background: #383534!important;
+    background: #383534;
     color: #FFF;
     display: none;
     max-width: 300px;
