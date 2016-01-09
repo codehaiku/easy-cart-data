@@ -2273,6 +2273,9 @@ body.shoemaker .ec_product_quickview_close>input:active {
     text-shadow: none
 }
 
+#ec_admin_mass_change_error,
+.ec_cart_empty,
+.ec_details_option_row_error,
 .ec_products_no_results,
 body .ec_cart_error_message,
 body .ec_cart_error_row {
@@ -2282,6 +2285,9 @@ body .ec_cart_error_row {
     padding: 1em 2em;
     margin-bottom: 15px;
     color: #333
+}
+#ec_admin_mass_change_error{
+	padding: 10px 15px;
 }
 
 .ec_product_page_sort {
@@ -3101,14 +3107,6 @@ body.shoemaker .ec_details_large_popup_close input[type=button]:hover {
     display: none;
     float: left;
     width: 100%;
-    border: 1px dashed #AE0000;
-    color: #AE0000;
-    padding: 8px 16px;
-    font-size: 12px;
-    line-height: 1.1em;
-    margin: 5px 0;
-    background: #FFE7E7;
-    box-sizing: border-box
 }
 
 .ec_details_option_data {
@@ -3789,11 +3787,11 @@ body.shoemaker .ec_details_large_popup_close input[type=button]:hover {
     float: left;
     position: relative;
     display: block;
-    color: #f2f2f2f2f2f2;
+    color: #f2f2f2;
     width: 0;
     height: 0;
     border-right: 8px solid transparent;
-    border-bottom: 5px solid #f2f2f2f2f2f2;
+    border-bottom: 5px solid #f2f2f2;
     border-left: 8px solid transparent;
     -moz-transform: rotate(35deg);
     -webkit-transform: rotate(35deg);
@@ -3811,7 +3809,7 @@ body.shoemaker .ec_details_large_popup_close input[type=button]:hover {
 }
 
 .ec_product_details_star_off:before {
-    border-bottom: 8px solid #f2f2f2f2f2f2;
+    border-bottom: 8px solid #f2f2f2;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     top: -5px;
@@ -3823,10 +3821,10 @@ body.shoemaker .ec_details_large_popup_close input[type=button]:hover {
 }
 
 .ec_product_details_star_off:after {
-    color: #f2f2f2f2f2f2;
+    color: #f2f2f2;
     left: -9px;
     border-right: 8px solid transparent;
-    border-bottom: 6px solid #f2f2f2f2f2f2;
+    border-bottom: 6px solid #f2f2f2;
     border-left: 8px solid transparent;
     -webkit-transform: rotate(-70deg);
     -moz-transform: rotate(-70deg);
@@ -4434,11 +4432,8 @@ body.shoemaker .ec_details_large_popup_close input[type=button]:hover {
 }
 
 .ec_cart_empty {
-    float: left;
     width: 100%;
-    text-align: center;
-    font-size: 18px;
-    color: #222
+    display: block;
 }
 
 .ec_cart_empty_button_row {
@@ -4749,7 +4744,7 @@ td.ec_cartitem_quantity {
 }
 
 .ec_cartitem_quantity_table>tbody>tr>td.ec_quantity_column {
-    width: 24%;
+    width: 20%;
     border: 1px solid #ddd
 }
 
@@ -5192,6 +5187,10 @@ td.ec_cartitem_total {
 .ec_slideout_editor .thrive-customized-select {
     margin-top: 10px
 }
+.ec_product_li .ec_product_editor .thrive-customized-select .thrive-customized-select-inner,
+.ec_slideout_editor .thrive-customized-select .thrive-customized-select-inner{
+	min-width: 100%;
+}
 
 .ec_cart_button_row>.ec_cart_button_working,
 .ec_account_login .ec_cart_button_row>a.ec_account_login_create_account_button,
@@ -5256,7 +5255,8 @@ body.shoemaker .ec_admin_view_more_button {
     padding: 0;
     background: 0 0;
     width: 100%;
-    color: inherit!important
+    color: inherit!important;
+    text-align: center;
 }
 
 body.shoemaker .ec_admin_preview_button a,
@@ -7757,7 +7757,6 @@ ul.ec_menu_vertical span {
     width: 100%;
     float: left;
     margin-top: 8px;
-    margin-left: 3px
 }
 
 .ec_product_widget_title a {
@@ -7775,7 +7774,6 @@ ul.ec_menu_vertical span {
     width: 100%;
     float: right;
     margin-top: 8px;
-    margin-right: 3px
 }
 
 .ec_product_widget_price {
@@ -7802,7 +7800,7 @@ ul.ec_menu_vertical span {
 .ec_product_widget_pricing>.ec_product_old_price {
     font-size: 16px;
     font-weight: 400;
-    color: #f2f2f2;
+    color: #B5B5B5;
     text-decoration: line-through;
     margin-right: 5px
 }
@@ -8140,24 +8138,28 @@ ul.ec_menu_vertical span {
     display: none
 }
 
-body.shoemaker .ec_admin_preview_ipad_landscape > input,
-body.shoemaker .ec_admin_preview_ipad_landscape > input:hover {
-    background: url(images/ipad_landscape.png) no-repeat
+body.shoemaker .ec_admin_preview_ipad_landscape > input[type="button"],
+body.shoemaker .ec_admin_preview_ipad_landscape > input[type="button"]:hover {
+    background: url(images/ipad_landscape.png) no-repeat;
+	box-shadow: none;
 }
 
-body.shoemaker .ec_admin_preview_ipad_portrait > input,
-body.shoemaker .ec_admin_preview_ipad_portrait > input:hover {
-    background: url(images/ipad_portrait.png) no-repeat
+body.shoemaker .ec_admin_preview_ipad_portrait > input[type="button"],
+body.shoemaker .ec_admin_preview_ipad_portrait > input[type="button"]:hover {
+    background: url(images/ipad_portrait.png) no-repeat;
+	box-shadow: none;
 }
 
-body.shoemaker .ec_admin_preview_iphone_landscape > input,
-body.shoemaker .ec_admin_preview_iphone_landscape > input:hover {
-    background: url(images/iphone_landscape.png) no-repeat
+body.shoemaker .ec_admin_preview_iphone_landscape > input[type="button"],
+body.shoemaker .ec_admin_preview_iphone_landscape > input[type="button"]:hover {
+    background: url(images/iphone_landscape.png) no-repeat;
+	box-shadow: none;
 }
 
-body.shoemaker .ec_admin_preview_iphone_portrait > input,
-body.shoemaker .ec_admin_preview_iphone_portrait > input:hover {
-    background: url(images/iphone_portrait.png) no-repeat
+body.shoemaker .ec_admin_preview_iphone_portrait > input[type="button"],
+body.shoemaker .ec_admin_preview_iphone_portrait > input[type="button"]:hover {
+    background: url(images/iphone_portrait.png) no-repeat;
+	box-shadow: none;
 }
 
 .ec_newsletter_widget input[type=submit]:hover,
