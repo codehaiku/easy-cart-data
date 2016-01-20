@@ -75,7 +75,32 @@
 body {
     overflow: hidden;
 }
+body.shoemaker #toplinks #shoemaker-top-menu-user-action .ec_languagewidget form select{
+  min-width: 95px;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+body.shoemaker #toplinks #shoemaker-top-menu-user-action .ec_languagewidget form select,
+body.shoemaker #toplinks #shoemaker-top-menu-user-action .ec_currencywidget form select{
+  color:#ddd;
+}
 
+body.shoemaker #toplinks #shoemaker-top-menu-user-action .ec_languagewidget form:after,
+body.shoemaker #toplinks #shoemaker-top-menu-user-action .ec_currencywidget form:after {
+  right: 0;
+  color:#ddd;
+}
+
+body #toplinks #shoemaker-top-menu-user-action .ec_languagewidget form select option,
+body #toplinks #shoemaker-top-menu-user-action .ec_currencywidget form select option {
+  background: #fff;
+  color: #ddd;
+}
+body #toplinks #shoemaker-top-menu-user-action .ec_languagewidget,
+body #toplinks #shoemaker-top-menu-user-action .ec_currencywidget{
+  display: inline-block;
+  position: relative;
+}
 #ec_store_product_list {
     margin: 0 -29px;
     list-style: disc;
