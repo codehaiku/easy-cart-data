@@ -947,7 +947,6 @@ body {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    box-shadow: none;
 }
 
 .ec_product_type1 .ec_product_quickview>input:active,
@@ -1235,10 +1234,11 @@ body {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    box-shadow: none;
     border: none;
 }
-
+body.shoemaker .ec_product_type3 .ec_product_quickview>input:active {
+  top: 3px;
+}
 .ec_product_type3 .ec_product_quickview>input {
     font-size: 13px;
     position: absolute;
@@ -1340,11 +1340,12 @@ body {
 
 .ec_product_type4 .ec_out_of_stock,
 .ec_product_type4 .ec_seasonal_mode {
-    text-align: right;
+    text-align: center;
+    float: left;
+    width: 100%;
     font-size: 12px;
     margin: 18px 0 0;
     text-shadow: none;
-    float: right;
 }
 
 .ec_product_type4:hover .ec_product_quickview>input {
@@ -1371,8 +1372,10 @@ body {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    box-shadow: none;
     border: none;
+}
+body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
+  top: 3px;
 }
 
 .ec_product_type4 .ec_product_quickview>input {
@@ -1709,7 +1712,7 @@ body {
     color: #fff;
     font-size: 11px;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .ec_product_type6 .ec_product_meta_type6 .ec_product_addtocart_container {
@@ -3703,7 +3706,7 @@ body.shoemaker .ec_details_large_popup_close input[type=button]:hover {
     width: 100%;
     font-size: 22px;
     color: #222;
-    margin: 0 0 10px;
+    margin: 0 0 15px;
 }
 
   .ec_details_related_products {
@@ -4735,7 +4738,7 @@ td.ec_cartitem_quantity {
 }
 
 .ec_cartitem_quantity_table>tbody>tr>td.ec_quantity_column {
-    width: 25%;
+    width: 20%;
     border: 1px solid #ddd;
 }
 
@@ -5201,7 +5204,7 @@ td.ec_cartitem_total {
     color: #fff;
     padding: 7.5px 25px;
     border: 0;
-    font-size: 12px;
+    font-size: 13.6px;
     line-height: 22px;
     box-shadow: 0px 3px 0px 0px #7CB935;
     border-radius: 4px;
