@@ -865,7 +865,6 @@ body {
     text-decoration: none;
     font-size: 13px;
     border: none;
-    padding: 4px 10px;
 }
 
 .ec_product_stars_type5,
@@ -1476,7 +1475,7 @@ body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
     position: absolute;
     z-index: 998;
     overflow: hidden;
-    bottom: 65px;
+    bottom: 70px;
 }
 
 .ec_product_type5 .ec_product_addtocart {
@@ -1523,10 +1522,16 @@ body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
     width: 100%;
     font-size: 12px;
     z-index: 665;
-    top: 7px;
     position: absolute;
     text-align: center;
     text-shadow: none;
+    transform: translateY(-100%);
+    display: table;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .ec_product_type5 .ec_product_addtocart:hover {
@@ -1534,7 +1539,9 @@ body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
 }
 
 .ec_product_type5 .ec_out_of_stock {
-    color: #C62828;
+    background: #C62828;
+    color: #fff;
+    padding: 5px 0;
 }
 
 .ec_product_type5 .ec_seasonal_mode {
@@ -1619,7 +1626,7 @@ body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
 .ec_price_container_type5 {
     position: absolute;
     top: 15px;
-    right: -7px;
+    right: -6px;
     padding: 10px 12px;
 }
 
@@ -1628,7 +1635,7 @@ body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
     width: 0;
     height: 0;
     top: 100%;
-    right: 0;
+    right: 0.5px;
 }
 
 .ec_list_price_type5 {
@@ -5026,7 +5033,7 @@ td.ec_cartitem_total {
 .ec_cart_success_message {
     float: left;
     width: 100%;
-    border: 1px dashed #8BC34A;
+    border-top: 3px solid #8BC34A;
     color: #444;
     line-height: 1.1em;
     background: #f2f2f2;
@@ -7251,7 +7258,6 @@ td.ec_account_orderitem_total {
 .ec_donationwidget,
 .ec_donationwidget a {
     color: #222;
-    font-size: 13px;
 }
 
 .ec_category_widget>div {
