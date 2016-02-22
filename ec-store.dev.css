@@ -5213,7 +5213,6 @@ td.ec_cartitem_total {
     border: 0;
     font-size: 13.6px;
     line-height: 22px;
-    box-shadow: 0px 3px 0px 0px #7CB935;
     border-radius: 4px;
     margin-bottom: 3px;
     position: relative;
@@ -7517,7 +7516,7 @@ input[type=submit].ec_login_widget_button:hover {
 }
 
 .ec_menu_horizontal ul li>ul {
-    padding: .5em 1.5em;
+    padding: .5em 20px;
 }
 
 .ec_menu_vertical {
@@ -8111,7 +8110,6 @@ body.shoemaker .ec_admin_preview_iphone_portrait > input[type="button"]:hover {
 .ec_newsletter_widget input[type=submit]:hover,
 .ec_search_widget input[type=submit]:hover,
 input[type=submit].ec_login_widget_button:hover {
-    border-bottom: 0!important;
 }
 
 @media only screen and (min-width:1140px) {
