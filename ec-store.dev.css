@@ -864,7 +864,6 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
-    border: none;
 }
 
 .ec_product_stars_type5,
@@ -905,7 +904,6 @@ body {
 
 .ec_product_quickview input[type=button] {
     margin: 15px auto;
-    margin-bottom: 15px!important;
 }
 
 .ec_product_type1 .ec_product_quickview>input {
@@ -941,11 +939,9 @@ body {
 .ec_product_type1 .ec_product_quickview>input:hover {
     background: #444;
     color: #fff;
-    border: none;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: none;
 }
 
 .ec_product_type1 .ec_product_quickview>input:active,
@@ -1030,14 +1026,13 @@ body {
     border: 1px solid #ddd;
     color: #fff;
     cursor: pointer;
-    padding: 3.5px 5px 7.5px;
+    padding: 3.5px 5px 3px;
 }
 
 .ec_product_type2 .ec_product_addtocart a {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
-    border: none;
     text-shadow: none;
 }
 
@@ -1095,11 +1090,9 @@ body {
 .ec_product_type2 .ec_product_quickview>input:hover {
     background: #8BC34A;
     color: #FFF;
-    border: none;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: none;
 }
 
 .ec_product_type2 .ec_product_quickview>input:focus {
@@ -8882,6 +8875,9 @@ input[type=submit].ec_login_widget_button:hover {
 @media(max-width:992px) {
     .ec_details_large_popup_thumbnails {
         opacity: 1;
+    }
+    .ec_cart_left {
+        width: 100%;
     }
     .ec_cart_left.ec_cart_holder {
         width: 100%;
