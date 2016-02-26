@@ -2232,7 +2232,6 @@ body.shoemaker .ec_product_type4 .ec_product_quickview>input:active {
 .ec_product_quickview_content_quantity>input[type=button]:hover {
     background-color: #444;
     background-image: none;
-    border: none;
 }
 
 .ec_product_quickview_close {
@@ -2246,20 +2245,19 @@ body.shoemaker .ec_product_quickview_close>input {
     border-radius: 50%;
     padding: 4px 12px;
     top: 0;
-    opacity: .87;
+    opacity: 1;
     border: 2px solid #222;
     background: #000;
 }
-body.shoemaker .ec_product_quickview_close>input:hover{
-      background: #000;
-}
 
 body.shoemaker .ec_product_quickview_close>input:hover {
+    background: #000;
     box-shadow: none;
-    opacity: 1;
+    opacity: .87;
 }
 
 body.shoemaker .ec_product_quickview_close>input:active {
+    border-bottom: 2px solid #222;
     top: 0;
 }
 
@@ -5258,6 +5256,7 @@ td.ec_cartitem_total {
     background-color: #8bc34a;
     opacity: .85;
 }
+
 .ec_cart_button_row>.ec_cart_button_working,
 .ec_account_login .ec_cart_button_row>a.ec_account_login_create_account_button:active,
 .ec_admin_preview_button a:active,
@@ -5274,6 +5273,21 @@ td.ec_cartitem_total {
     border: none;
     top: 3px;
     margin-bottom: 6px;
+}
+.ec_cart_button_row>.ec_cart_button_working:focus,
+.ec_account_login .ec_cart_button_row>a.ec_account_login_create_account_button:focus,
+.ec_admin_preview_button a:focus,
+.ec_admin_view_more_button a:focus,
+.ec_cart_button_row .ec_account_button:focus,
+.ec_cart_button_row a:focus,
+.ec_cart_button_row input[type=button]:focus,
+.ec_cart_button_row>.ec_cart_button:focus,
+.ec_cart_widget_minicart_checkout_button:focus,
+.ec_product_admin_reorder_button:focus,
+.ec_product_li .ec_product_editor input[type=submit]:focus,
+.ec_product_li .ec_product_editor input[type=button]:focus,
+.ec_product_quickview_content_add_to_cart a:focus {
+    color:#fff;
 }
 
 body.shoemaker .ec_admin_preview_button,
